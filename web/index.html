@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SFU Browser Signaling Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="panel">
+      <h1>SFU Signaling Demo</h1>
+      <div class="controls">
+        <label>
+          Room
+          <input id="room" value="demo">
+        </label>
+        <label>
+          Participant
+          <input id="participant" value="alice">
+        </label>
+        <label>
+          Target
+          <input id="target" value="bob">
+        </label>
+        <button id="connect">Connect</button>
+        <button id="join">Join</button>
+        <button id="send-offer">Send Offer</button>
+        <button id="start-webrtc">Start WebRTC</button>
+      </div>
+    </section>
+
+    <section class="video-grid">
+      <video id="local-video" autoplay muted playsinline></video>
+      <video id="remote-video" autoplay playsinline></video>
+    </section>
+
+    <section class="panel">
+      <h2>Events</h2>
+      <pre id="log"></pre>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+build*/
+.vs/
+out/
+*.user
+*.suo
+*.obj
+*.exe
+*.ilk
+*.pdb
+third_party/*.nupkg
+third_party/*.zip
+third_party/libdatachannel_nuget/
+third_party/libdatachannel-v0.24.5-src/
+third_party/mediatoolkit_webrtc_native_0_24_5_1/
